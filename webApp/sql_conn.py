@@ -8,7 +8,7 @@ dbconfig = { 'host': '127.0.0.1',
 conn=mysql.connector.connect(**dbconfig)#connection python-mysql
 cursor= conn.cursor()#cursor za pishenje vo SQL
 
-_SQL= """ insert into log 
+_SQL= """ insert into log  
 (phrase, letters, ip, browser_string, results)
 values
 (%s, %s, %s, %s, %s)"""

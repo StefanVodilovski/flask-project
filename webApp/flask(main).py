@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, escape, session, copy_current_request_context
 from vsearch import functions
 
-from DBcm import UseDatabase, ConnectionError, CredentialsError
+from Database import UseDatabase, ConnectionError, CredentialsError
 from checker import check_logged_in
 import sys
 from threading import Thread
